@@ -1,0 +1,217 @@
+GIT Homework 1
+
+Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON. 
+=== создали через https://github.com/
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+=== git clone https://github.com/UPLIFTO/JSON.git
+ 6. Внутри локального JSON создать файл “new.json”.
+=== touch new.json
+ 7. Добавить файл под гит.
+=== git add new.json 
+ 8. Закоммитить файл.
+git commit -m "add new.json file"
+ 9. Отправить файл на внешний GitHub репозиторий.
+git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе
+ (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+=== vim new.json
+{
+  "name": "Sergey",
+  "surname": "Filippov",
+  "patronymic": "Yurievich" ,
+  "age" : "36" ,
+  "animals" : "1" ,
+  "salary" : "2000"
+}
+ 11. Отправить изменения на внешний репозиторий.
+git add new.json
+git commit -m "changed file new.json"
+git push
+ 12. Создать файл preferences.json
+$ touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях 
+(Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+vim preferences.json
+{
+   "favorite movie": "Avatar",
+   "favorite serial": "Misfits",
+   "favorite foods": "pizza",
+   "favorite time in year": "spring",
+   "want to visit country": "Japan"
+}
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+vim skills.json
+{
+"theory": "what is testing, bag, documents, view, method, etc",
+"architecture": "klient-server",
+"apps": "XCode",
+"server response": "200, 301, 303, etc",
+"mobile testing": "android studio"
+}
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+$ git add preferences.json skills.json
+$ git commit -m "add 2 new files"
+$ git push
+ 16. На веб интерфейсе создать файл bug_report.json.  (скриншот https://prnt.sc/v94A_VzmLv_8)
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. (скриншот https://prnt.sc/26dcav6)
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON. 
+ {
+  "type" : "bug"
+  "heading" : "The send message button is not active in the feedback form"
+  "description" : "after entering the text, the send message button is not active"
+  "priority" : "hight"
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе. )
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+$ git pull "https://github.com/UPLIFTO/JSON.git"
+
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+=== создали через https://github.com/
+ 22. Клонировать репозиторий XML на локальный компьютер. 
+$ git clone https://github.com/UPLIFTO/XML.git
+ 23. Внутри локального XML создать файл “new.xml”.
+$ cd xml
+$ touch new.xml
+ 24. Добавить файл под гит.
+$ git add new.xml
+ 25. Закоммитить файл.
+$ git commit -m "add new file"
+ 26. Отправить файл на внешний GitHub репозиторий.
+$ git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать
+ в формате XML.
+$ vim new.xml
+<?xml version="1.0" encoding="utf-8"?>
+<about>
+    <name>Sergey</name>
+    <surname>Filippov</surname>
+    <patronymic>Yurievich</patronymic>
+    <age>36</age>
+    <animals>1</animals>
+    <salary>2000</salary>
+</about>
+ 28. Отправить изменения на внешний репозиторий.
+git add .
+git commit -m "add information"
+git push
+ 29. Создать файл preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях 
+(Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+$ vim preferences.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+	<favorite_movie>Avatar</favorite_movie>
+	<favorite_serial>Misfits</favorite_serial>
+	<favorite_foods>pizza</favorite_foods>
+	<favorite_time_in_year>spring</favorite_time_in_year>
+	<want_to_visit_country>Japan</want_to_visit_country>
+</preferences>	
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+== touch skills.xml
+== vim skills.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<skills>
+	<a>theory</a>
+	<b>client-server</b>
+	<c>HTTP</c>
+	<d>Response_Codes</d>
+	<e>Dev_Tools</e>
+	<f>XML</f>
+</skills>
+ 32. Сделать коммит в одну строку.
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+$ git add .
+$ git commit -am "new files"
+$ git push
+ 34. На веб интерфейсе создать файл bug_report.xml. (скриншот https://prnt.sc/KssL2UCSok5J)
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе. (скриншот https://prnt.sc/znCxVTgM8DFM)
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML. 
+<?xml version="1.0" encoding="utf-8"?>
+<bug>
+  <id>44</id>
+  <heading>The send message utton is not active in the feedback form</heading>
+  <description>after entering the text, the send message button is not active</description>
+  <os>windows</os>
+  <priority>hight</priority>
+  <repeatability>stable</repeatability>
+  <steps>...</steps>
+</bug> 
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML
+$ git pull "https://github.com/UPLIFTO/XML.git"
+
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+=== создали через https://github.com/
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+$ git clone "https://github.com/UPLIFTO/TXT.git"
+ 3. Внутри локального TXT создать файл “new.txt”.
+$ touch new.txt
+ 4. Добавить файл под гит.
+$ git add new.txt
+ 5. Закоммитить файл.
+$ git commit -m "add new file"
+ 6. Отправить файл на внешний GitHub репозиторий.
+$ git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). 
+Всё написать в формате TXT.
+$ vim new.txt
+Filippov Sergey Yrjevich
+36 years old
+one pet
+salary 2000
+
+ 8. Отправить изменения на внешний репозиторий.
+$ git add .
+$ git commit -m "new information"
+$ git push
+ 9. Создать файл preferences.txt
+$ touch references.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях 
+(Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+$ vim references.txt
+favorite movie:Avatar
+favorite serial:Misfits
+favorite foods:pizza
+favorite time in year:spring
+want to visit country:Japan
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+$ cat >> skills.txt
+theory
+client-server architecture
+XCode
+server response
+Json, xml: structure
+mobile testing
+android studio
+ 12. Сделать коммит в одну строку.
+$ git add . && git commit -m "new info in files"
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+$ git push
+ 14. На веб интерфейсе создать файл bug_report.txt.(скриншот https://prnt.sc/F2DX3SeLra5w)
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе. (скриншот https://prnt.sc/hVA35h1gn7X1)
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT. (скриншот https://prnt.sc/zZwVkJPl14RV)
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+$ git pull "https://github.com/UPLIFTO/TXT.git"
+
