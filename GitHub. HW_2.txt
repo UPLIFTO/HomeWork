@@ -1,0 +1,92 @@
+Задание 1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+
+   Создал на Githab репозитроий в котором будут мои ветки.
+   Клонируем его на лакольный репозиторий git clone и ссылка репозитория
+   Заходим в склонируемый репозиторий cd "название репозитория"
+   Создаем ветки Postman, Jmeter, CheckLists, Bug_Reports, SQL, Charles, Mobile_Testing:
+
+      git branch Postman
+      git branch Jmeter
+      git branch CheckLists
+      git branch Bug_Reports
+      git branch SQL
+      git branch Charles
+      git branch Mobile_Testing
+
+Задание 2. Запушить все ветки на внешний репозиторий.
+
+      git push -u origin Postman
+      git push -u origin Jmeter
+      git push -u origin CheckLists
+      git push -u origin Bug_Reports
+      git push -u origin SQL
+      git push -u origin Charles
+      git push -u origin Mobile_Testing
+
+Задание 3. В ветке Bug_Reports сделать текстовый документ со структурой баг репорта
+      git checkout Bug_Reports
+      vim bug.txt
+        insert
+       1. Заголовок
+       2. Описание
+       3. Окружение
+       4. Приоритет
+       5. Шаги воспроизведения
+       6. Фактический результат
+       7. Ожидаемый результат
+       esc :wq
+Задание 4. Запушить структуру багрепорта на внешний репозиторий
+      git add .
+      git commit -m "create bug.txt"
+      git push
+Задание 5. Вмержить ветку Bug_Reports в Main
+      git checkout main
+      git merge Bug_Reports
+Задание 6. Запушить main на внешний репозиторий.      
+      git add .
+      git commit -m "merge branch Bug_Reports in main"
+      git push
+Задание 7. В ветке CheckLists набросать структуру чек листа.
+      git checkout CheckLists
+      vim check_list.txt
+        insert
+        анкета кандидата
+
+запонены все поля
+не заполнено одно или несколько полей
+поле имя невалидные данные
+поле имя валидные данные
+
+
+авторизация личный кабинет
+
+верный логин и пароль
+неверный логин
+неверный пароль
+
+
+обратная связь
+
+заполнены все поля
+не заполнено одно или несколько полей
+поле календарь
+поле период
+
+   insert :wq
+Задание 8. Запушить структуру на внешний репозиторий: 
+    git add.
+    git commit -m "create check_list.txt"
+    git push
+Задание 9.  9. На внешнем репозитории сделать Pull Request ветки CheckLists в main:
+    После пуша check_list.txt на локальный репозиторий ветки CheckLists появляется зеленая кнопка Compare&pull request жмём на нее
+    далее нажимаем "Create pull request"
+Задание 10. Синхронизировать Внешнюю и Локальную ветки Main
+    git checkout main
+    git pull
